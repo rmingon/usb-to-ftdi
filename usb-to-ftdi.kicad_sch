@@ -5,7 +5,7 @@
 	(uuid "72af73c6-2ba0-4477-b1e5-47a8579a28b2")
 	(paper "A5")
 	(lib_symbols
-		(symbol "CH340C:CH340C"
+		(symbol "CH340:CH340C"
 			(pin_names
 				(offset 1.016)
 			)
@@ -13,7 +13,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -7.62 10.795 0)
+				(at -10.16 20.955 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -22,7 +22,7 @@
 				)
 			)
 			(property "Value" "CH340C"
-				(at -7.62 -15.24 0)
+				(at -10.16 -20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -30,7 +30,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "CH340C:SO016"
+			(property "Footprint" "CH340C:SOIC127P600X180-16N"
 				(at 0 0 0)
 				(effects
 					(font
@@ -49,7 +49,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "\nReplacement for Brother P-Touch\n"
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "WCH"
 				(at 0 0 0)
 				(effects
 					(font
@@ -59,7 +68,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Olimex"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "1.8 mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -89,7 +98,7 @@
 					(hide yes)
 				)
 			)
-			(property "PROD_ID" "IC-14038"
+			(property "Check_prices" "https://www.snapeda.com/parts/CH340C/WCH/view-part/?ref=eda"
 				(at 0 0 0)
 				(effects
 					(font
@@ -99,7 +108,27 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/CH340C/Olimex/view-part/?ref=snap"
+			(property "STANDARD" "IPC 7351B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "2G"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/CH340C/WCH/view-part/?ref=snap"
 				(at 0 0 0)
 				(effects
 					(font
@@ -119,6 +148,16 @@
 					(hide yes)
 				)
 			)
+			(property "Description_1" "\n                        \n                            USB to serial chip CH340\n                        \n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
 			(property "Availability" "Not in stock"
 				(at 0 0 0)
 				(effects
@@ -129,7 +168,7 @@
 					(hide yes)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/CH340C/Olimex/view-part/?ref=eda"
+			(property "MANUFACTURER" "WCH"
 				(at 0 0 0)
 				(effects
 					(font
@@ -141,19 +180,19 @@
 			)
 			(symbol "CH340C_0_0"
 				(rectangle
-					(start -7.62 -12.7)
-					(end 7.62 10.16)
+					(start -10.16 -17.78)
+					(end 10.16 20.32)
 					(stroke
-						(width 0.4064)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 -10.16 0)
-					(length 2.54)
+				(pin power_in line
+					(at 15.24 -15.24 180)
+					(length 5.08)
 					(name "GND"
 						(effects
 							(font
@@ -169,9 +208,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 -7.62 180)
-					(length 2.54)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 5.08)
 					(name "~{DSR}"
 						(effects
 							(font
@@ -187,9 +226,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 -5.08 180)
-					(length 2.54)
+				(pin input line
+					(at -15.24 -5.08 0)
+					(length 5.08)
 					(name "~{RI}"
 						(effects
 							(font
@@ -205,9 +244,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 -2.54 180)
-					(length 2.54)
+				(pin input line
+					(at -15.24 -7.62 0)
+					(length 5.08)
 					(name "~{DCD}"
 						(effects
 							(font
@@ -223,9 +262,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 0 180)
-					(length 2.54)
+				(pin output line
+					(at 15.24 0 180)
+					(length 5.08)
 					(name "~{DTR}"
 						(effects
 							(font
@@ -241,9 +280,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 2.54 180)
-					(length 2.54)
+				(pin output line
+					(at 15.24 -2.54 180)
+					(length 5.08)
 					(name "~{RTS}"
 						(effects
 							(font
@@ -259,9 +298,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 2.54 0)
-					(length 2.54)
+				(pin input line
+					(at -15.24 12.7 0)
+					(length 5.08)
 					(name "R232"
 						(effects
 							(font
@@ -277,9 +316,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 7.62 0)
-					(length 2.54)
+				(pin power_in line
+					(at 15.24 17.78 180)
+					(length 5.08)
 					(name "VCC"
 						(effects
 							(font
@@ -295,10 +334,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 7.62 180)
-					(length 2.54)
-					(name "TXO"
+				(pin output line
+					(at -15.24 5.08 0)
+					(length 5.08)
+					(name "TXD"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -313,10 +352,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "RXI"
+				(pin input line
+					(at -15.24 7.62 0)
+					(length 5.08)
+					(name "RXD"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -331,9 +370,9 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 5.08 0)
-					(length 2.54)
+				(pin power_in line
+					(at 15.24 15.24 180)
+					(length 5.08)
 					(name "V3"
 						(effects
 							(font
@@ -350,8 +389,8 @@
 					)
 				)
 				(pin bidirectional line
-					(at -10.16 0 0)
-					(length 2.54)
+					(at 15.24 7.62 180)
+					(length 5.08)
 					(name "UD+"
 						(effects
 							(font
@@ -368,8 +407,8 @@
 					)
 				)
 				(pin bidirectional line
-					(at -10.16 -2.54 0)
-					(length 2.54)
+					(at 15.24 5.08 180)
+					(length 5.08)
 					(name "UD-"
 						(effects
 							(font
@@ -385,9 +424,45 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 10.16 -10.16 180)
-					(length 2.54)
+				(pin no_connect line
+					(at 15.24 -10.16 180)
+					(length 5.08)
+					(name "NC."
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "~{OUT}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 5.08)
 					(name "~{CTS}"
 						(effects
 							(font
@@ -1896,10 +1971,10 @@
 		(uuid "1ebe5324-b73a-4124-8e55-995fcda08bf4")
 	)
 	(junction
-		(at 22.86 67.31)
+		(at 58.42 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5fc7eae6-e0de-48d2-bd4f-9daabf5574d3")
+		(uuid "6a541030-1218-4315-8cc8-1f1ca21e5f03")
 	)
 	(junction
 		(at 71.12 35.56)
@@ -1908,16 +1983,16 @@
 		(uuid "6c2ef98a-a2c6-45d7-9886-34ac9662bf46")
 	)
 	(junction
+		(at 68.58 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad2b5328-ee1c-4a07-bedb-a0d147e6da68")
+	)
+	(junction
 		(at 91.44 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b34eb8c2-70f9-40cc-a769-fae98e1e73b3")
-	)
-	(junction
-		(at 30.48 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c659ba6e-d94f-40dd-9036-68284825cdbb")
 	)
 	(junction
 		(at 60.96 25.4)
@@ -2117,26 +2192,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 67.31) (xy 33.02 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68c721d2-02d3-45b0-a419-4c72d1b143bf")
-	)
-	(wire
-		(pts
-			(xy 30.48 69.85) (xy 33.02 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d75ad9e-8d8e-466e-86f7-f1f6a980d255")
-	)
-	(wire
-		(pts
 			(xy 60.96 25.4) (xy 60.96 26.67)
 		)
 		(stroke
@@ -2147,7 +2202,7 @@
 	)
 	(polyline
 		(pts
-			(xy 77.47 95.25) (xy 77.47 49.53)
+			(xy 85.09 95.25) (xy 85.09 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2177,6 +2232,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 59.69) (xy 58.42 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f5197dc-59de-4877-a8ab-e0d8505521bd")
+	)
+	(wire
+		(pts
 			(xy 138.43 30.48) (xy 149.86 30.48)
 		)
 		(stroke
@@ -2197,7 +2262,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 67.31) (xy 22.86 67.31)
+			(xy 73.66 59.69) (xy 68.58 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2217,7 +2282,7 @@
 	)
 	(polyline
 		(pts
-			(xy 13.97 95.25) (xy 77.47 95.25)
+			(xy 13.97 95.25) (xy 85.09 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2307,16 +2372,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 67.31) (xy 30.48 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2b7cc37-0f8c-4c6a-97b5-c8b2ca9b14c2")
-	)
-	(wire
-		(pts
 			(xy 149.86 35.56) (xy 144.78 35.56)
 		)
 		(stroke
@@ -2327,7 +2382,7 @@
 	)
 	(polyline
 		(pts
-			(xy 77.47 49.53) (xy 13.97 49.53)
+			(xy 85.09 49.53) (xy 13.97 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2357,13 +2412,13 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 67.31) (xy 30.48 67.31)
+			(xy 58.42 59.69) (xy 68.58 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f480fc50-01a8-4b9f-ac46-7b2a36049fa3")
+		(uuid "f5ae0f70-7341-4910-86e7-6f8af0471529")
 	)
 	(wire
 		(pts
@@ -2408,9 +2463,9 @@
 		)
 		(uuid "dbe87470-8408-4b26-a4e3-a790b4570240")
 	)
-	(global_label "CTS"
+	(global_label "D-"
 		(shape input)
-		(at 53.34 85.09 0)
+		(at 58.42 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2418,36 +2473,14 @@
 			)
 			(justify left)
 		)
-		(uuid "12b1979c-0c6a-4dbb-b65b-1d6b9c4de71f")
+		(uuid "112f1562-5de1-4c05-92ac-4a7b293a2fc1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.7723 85.09 0)
+			(at 64.2476 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "D+"
-		(shape input)
-		(at 33.02 74.93 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "142e0a8c-b4a6-4f9d-9021-1f5424504048")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 27.7645 74.8506 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -2474,28 +2507,6 @@
 			)
 		)
 	)
-	(global_label "RX-PROG"
-		(shape input)
-		(at 53.34 69.85 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2eef9baa-584f-4de6-bba4-6ccd4fd212bd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.9455 69.7706 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "TX-PROG"
 		(shape input)
 		(at 149.86 27.94 180)
@@ -2518,9 +2529,31 @@
 			)
 		)
 	)
-	(global_label "D-"
+	(global_label "D+"
 		(shape input)
-		(at 33.02 77.47 180)
+		(at 58.42 69.85 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "44bbc330-ca8b-43b4-9e56-b4d853ea1614")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.2476 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CTS"
+		(shape input)
+		(at 27.94 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2528,9 +2561,9 @@
 			)
 			(justify right)
 		)
-		(uuid "68482911-6113-4b92-962f-7e2a98dd5613")
+		(uuid "548b35d2-c902-4afb-8cff-7d8f4d53c931")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 27.7645 77.3906 0)
+			(at 21.5077 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2540,24 +2573,24 @@
 			)
 		)
 	)
-	(global_label "DTR"
+	(global_label "TX-PROG"
 		(shape input)
-		(at 53.34 74.93 0)
+		(at 27.94 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "7261cb19-081a-49c4-9c21-e6a1436c50a0")
+		(uuid "5d9d3ad3-56c4-4246-9207-68ec2edf7441")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.8328 74.93 0)
+			(at 16.0648 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2606,6 +2639,28 @@
 			)
 		)
 	)
+	(global_label "DTR"
+		(shape input)
+		(at 58.42 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bdbd5e82-1a4f-43bf-ad7e-eba4a471d6f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.9128 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D+"
 		(shape input)
 		(at 35.56 31.75 0)
@@ -2650,31 +2705,31 @@
 			)
 		)
 	)
-	(global_label "TX-PROG"
+	(global_label "RX-PROG"
 		(shape input)
-		(at 53.34 67.31 0)
+		(at 27.94 69.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "e86ceced-63b0-4383-8c25-7b6f8a8a1901")
+		(uuid "e8978e05-9b87-412b-8db1-ce7784780f90")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.6431 67.2306 0)
+			(at 15.7624 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 22.86 74.93 0)
+		(at 68.58 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2683,7 +2738,7 @@
 		(fields_autoplaced yes)
 		(uuid "14013446-e757-44d9-ad2d-34fc71e7babf")
 		(property "Reference" "#PWR07"
-			(at 22.86 81.28 0)
+			(at 68.58 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,7 +2747,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 22.86 80.01 0)
+			(at 68.58 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2700,7 +2755,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.86 74.93 0)
+			(at 68.58 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2709,7 +2764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 74.93 0)
+			(at 68.58 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,7 +2773,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 22.86 74.93 0)
+			(at 68.58 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,7 +2950,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 20.32 67.31 90)
+		(at 73.66 59.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2903,7 +2958,7 @@
 		(dnp no)
 		(uuid "3b356073-4a9c-4de8-9615-02edf0dffd93")
 		(property "Reference" "#PWR06"
-			(at 24.13 67.31 0)
+			(at 69.85 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2912,7 +2967,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 15.24 69.85 90)
+			(at 78.74 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2921,7 +2976,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 20.32 67.31 0)
+			(at 73.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2930,7 +2985,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 20.32 67.31 0)
+			(at 73.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2939,7 +2994,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 20.32 67.31 0)
+			(at 73.66 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2966,44 +3021,43 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 22.86 71.12 0)
+		(lib_id "CH340:CH340C")
+		(at 43.18 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "46b6afee-d92d-46df-85db-c1c055fa6b8c")
-		(property "Reference" "C4"
-			(at 26.67 69.8499 0)
+		(uuid "41d7263d-696e-46f9-a5c7-e51dcfb836bb")
+		(property "Reference" "U3"
+			(at 43.18 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "C"
-			(at 26.67 72.3899 0)
+		(property "Value" "CH340C"
+			(at 43.18 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 23.8252 74.93 0)
+		(property "Footprint" "CH340C:SOIC127P600X180-16N"
+			(at 43.18 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 22.86 71.12 0)
+		(property "Datasheet" ""
+			(at 43.18 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3012,7 +3066,239 @@
 			)
 		)
 		(property "Description" ""
-			(at 22.86 71.12 0)
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "WCH"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1.8 mm"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/CH340C/WCH/view-part/?ref=eda"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "IPC 7351B"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "2G"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CH340C/WCH/view-part/?ref=snap"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "CH340C"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            USB to serial chip CH340\n                        \n"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "WCH"
+			(at 43.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2e42123-b689-4f84-be89-ae1704cf3789")
+		)
+		(pin "10"
+			(uuid "f7e31db9-61a6-4da6-9745-8395f1788149")
+		)
+		(pin "11"
+			(uuid "dd9a13d9-1ebe-4c1c-8500-bfd508eb7d42")
+		)
+		(pin "12"
+			(uuid "33420c26-ecb1-4801-96aa-4a4bc5b865e0")
+		)
+		(pin "13"
+			(uuid "9c769652-a4b5-4070-af0b-5d53875c6e3c")
+		)
+		(pin "14"
+			(uuid "e95fb3d6-550f-4a86-8792-dd2928460524")
+		)
+		(pin "15"
+			(uuid "7b9c4424-b35c-4590-ad25-c0ca14144840")
+		)
+		(pin "16"
+			(uuid "153e546b-6378-40e3-9daf-04203e7467b8")
+		)
+		(pin "2"
+			(uuid "4f1677dd-f387-48d0-9e8c-e594559c56b3")
+		)
+		(pin "3"
+			(uuid "b2b71816-9bb7-45c8-a503-0a68da114405")
+		)
+		(pin "4"
+			(uuid "3f20628c-5d85-4829-9ecd-a9448517a141")
+		)
+		(pin "5"
+			(uuid "874db8cd-bad7-4a40-8f3e-8b58a4a2d8a0")
+		)
+		(pin "6"
+			(uuid "74c6bc29-9e0a-4849-8ac5-23a08d6d9ab1")
+		)
+		(pin "7"
+			(uuid "e55c818f-0097-48d0-bc80-c3a247654ab6")
+		)
+		(pin "8"
+			(uuid "76edb31e-6c5d-4cef-91e3-f7b40cdbe0b1")
+		)
+		(pin "9"
+			(uuid "fe980e53-1a1e-4d2c-adcb-3c5fb1a49cc0")
+		)
+		(instances
+			(project ""
+				(path "/72af73c6-2ba0-4477-b1e5-47a8579a28b2"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 68.58 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46b6afee-d92d-46df-85db-c1c055fa6b8c")
+		(property "Reference" "C4"
+			(at 72.39 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "C"
+			(at 72.39 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 69.5452 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 68.58 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3510,7 +3796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm"
 			(at 134.62 30.48 0)
 			(effects
 				(font
@@ -3714,198 +4000,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CH340C:CH340C")
-		(at 43.18 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ae0c700-6724-4224-82bb-4d9260b358bd")
-		(property "Reference" "U2"
-			(at 43.18 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CH340C"
-			(at 43.18 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "CH340C:SO016"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "\nReplacement for Brother P-Touch\n"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MF" "Olimex"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" "IC-14038"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/CH340C/Olimex/view-part/?ref=snap"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "CH340C"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "Not in stock"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/CH340C/Olimex/view-part/?ref=eda"
-			(at 43.18 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "41ffb783-5ecd-4da8-8fdd-e34f12e45071")
-		)
-		(pin "10"
-			(uuid "5bcc0d5a-ef14-43bd-85e2-25c410c88e38")
-		)
-		(pin "11"
-			(uuid "b7f62d0e-48b0-4c6b-a594-272a4464d7f5")
-		)
-		(pin "12"
-			(uuid "b13c414b-743a-4533-ad17-6459c00e278a")
-		)
-		(pin "13"
-			(uuid "ca32e71e-1751-47d5-ac66-7600eca7183d")
-		)
-		(pin "14"
-			(uuid "e9702354-a1d5-4585-b9f5-b88eda94ce2a")
-		)
-		(pin "15"
-			(uuid "63d23a65-b130-47ec-ad7d-62cee2081079")
-		)
-		(pin "16"
-			(uuid "d1bc303f-a449-4f4a-afb8-6a5e87047514")
-		)
-		(pin "2"
-			(uuid "38ea660d-2284-4f52-b9c0-487c031c77e4")
-		)
-		(pin "3"
-			(uuid "e646b8cb-abb4-4793-8e9d-ba140d5e80f6")
-		)
-		(pin "4"
-			(uuid "a2e588eb-2170-4c64-ad64-0f9ed2dc4787")
-		)
-		(pin "5"
-			(uuid "8596a90e-8eb8-4175-ab90-75aca654e4e0")
-		)
-		(pin "6"
-			(uuid "adbeed84-9dbe-4420-aa92-d2b9fc3d0801")
-		)
-		(pin "9"
-			(uuid "2ec81dcc-cd88-4574-b9ce-dddd83db32c1")
-		)
-		(instances
-			(project "usb-to-ftdi"
-				(path "/72af73c6-2ba0-4477-b1e5-47a8579a28b2"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-			(project "rfid-uhf-wifi-reader"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 154.94 27.94 0)
 		(unit 1)
@@ -3933,7 +4027,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 154.94 27.94 0)
 			(effects
 				(font
@@ -4192,79 +4286,6 @@
 			(project "usb-to-ftdi"
 				(path "/72af73c6-2ba0-4477-b1e5-47a8579a28b2"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 33.02 85.09 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff88b7db-beb0-463a-920c-3caf30e34264")
-		(property "Reference" "#PWR08"
-			(at 26.67 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 29.21 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 33.02 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4e13a591-a469-4c43-9600-e015dd27dfae")
-		)
-		(instances
-			(project "usb-to-ftdi"
-				(path "/72af73c6-2ba0-4477-b1e5-47a8579a28b2"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-			(project "rfid-uhf-wifi-reader"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
